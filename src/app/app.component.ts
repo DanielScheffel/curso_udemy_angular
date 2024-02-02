@@ -7,6 +7,7 @@ import { NewComponentComponent } from './components/new-component/new-component.
 import { TemplateBindingComponent } from './components/template/template-binding/template-binding.component';
 import { TemplateVariablesComponent } from './components/template/template-variables/template-variables.component';
 import { TemplateControlFlowComponent } from './components/template/template-control-flow/template-control-flow.component';
+import { TemplateDeferrableViewsComponent } from './components/template/template-deferrable-views/template-deferrable-views.component';
 
 @Component({
   selector: 'app-root',
@@ -18,14 +19,16 @@ import { TemplateControlFlowComponent } from './components/template/template-con
     TemplateBindingComponent, 
     TemplateVariablesComponent,
     TemplateControlFlowComponent,
+    TemplateDeferrableViewsComponent,
   ],
   template: `
     <!-- <router-outlet></router-outlet> -->
     <h1>Curso de Angular</h1>
-    <app-template-control-flow />
+    <!-- <app-template-control-flow /> -->
     <!-- app-template-binding />  -->
     <!-- <app-template-variables /> -->
     <!-- <app-new-component /> -->
+    <app-template-deferrable-views />
   `,
 
 })
